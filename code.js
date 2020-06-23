@@ -1,8 +1,12 @@
-// helloWorld function 
+// helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }
 // sayHello function
-function sayHello(){
-    return "Hello, Jane!";
+function sayHello(input){
+    if (input==="Alex"){
+        return "Hello, Alex!";
+    } else {
+        return "Hello, Jane!";
+    }
 }
