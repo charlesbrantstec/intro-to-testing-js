@@ -4,5 +4,5 @@ function helloWorld() {
 }
 // sayHello function
 function sayHello(){
-    // return "Hello";
+    return "";
 }
