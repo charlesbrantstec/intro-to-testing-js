@@ -24,3 +24,7 @@ function sayHello(input){
 function isFive(){
     return true;
 }
+
+function isEven(i){
+    return i % 2 === 0;
+}
