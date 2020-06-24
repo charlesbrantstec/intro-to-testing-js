@@ -116,12 +116,33 @@ describe ('isVowel', function(){
         expect(isVowel("banada")).toBe(false);
     })
     // isVowel() returns false
-    it('sdhoulf return false when passed no value', function(){
+    it('should return false when passed no value', function(){
         expect(isVowel()).toBe(false);
     })
 
 });
 
+describe ('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    })
+    // add(2, 3) returns 5
+    it('should return 5 when passed 2 & 3', function(){
+        expect(add(2, 3)).toBe(5)
+    })
+    // add(-3, -9) returns -12
+    it('should return -12 when passed -9 & -3', function(){
+        expect(add(-3, -9)).toBe(-12)
+    })
+    // add("5", 6) returns 11
+    it('should return 11 when passed 6 & "5"', function(){
+        expect(add(6, "5")).toBe(11)
+    })
+    // add("-4", "10") returns 6
+    // add("banana", "split") returns NaN
+    // add(2, "apples") returns NaN
+    // add() returns NaN
 
+});
 
 

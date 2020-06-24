@@ -36,3 +36,6 @@ function isVowel(x){
         return false;
     }
 }
+function add(x, y){
+    return x + y;
+}
