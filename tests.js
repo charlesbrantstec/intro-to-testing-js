@@ -12,7 +12,7 @@
 //     it("should never return 'undefined' when called", function() {
 //       expect(helloWorld()).not.toBe(undefined);
 //     });
-// });
+// }
 // Unit tests for the sayHello function
 describe('sayHello', function() {
     it('should be a defined function', function() {
@@ -41,7 +41,20 @@ describe('sayHello', function() {
     });
 });
 
-
+describe('isFive', function(){
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean no matter what the input', function() {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('Ensure that isFive returns true when passed 5', function() {
+        expect(isFive(5)).toBe(true)
+    });
+    it('Ensure that isFive returns true when passed the string "5"', function() {
+        expect(isFive("5")).toBe(true)
+    });
+});
 
 
 

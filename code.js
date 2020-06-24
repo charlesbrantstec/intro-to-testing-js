@@ -21,3 +21,6 @@ function sayHello(input){
     //     return "Hello, Jane!";
     // }
 }
+function isFive(){
+    return true;
+}
